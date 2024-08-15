@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #add8e6; /* Màu nền cho toàn bộ trang web */
+    padding: 10px; /* Thêm khoảng cách để nội dung không sát lề trên điện thoại */
+}
+
+.wrapper {
+    text-align: center; /* Căn giữa nội dung */
+    max-width: 500px; /* Giới hạn độ rộng của nội dung để phù hợp với màn hình nhỏ */
+    width: 100%; /* Đảm bảo khung chứa chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+}
+
+h2 {
+    font-size: 3em;
+    color: #e94d58;
+    margin: 15px 0;
+    font-size: 2.5em; /* Giảm kích thước chữ trên màn hình nhỏ */
+}
+
+.gif {
+    display: block;
+    margin: 20px auto; /* Căn giữa hình ảnh theo chiều ngang */
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước màn hình */
+    height: auto;
+    border-radius: 10px; /* Thêm góc bo cho hình ảnh */
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column; /* Đặt các nút theo cột để dễ bấm trên điện thoại */
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 80%; /* Giảm kích thước nút để phù hợp với màn hình nhỏ */
+    height: 50px;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px gray;
+    border: 2px solid #e94d58;
+    margin: 10px 0; /* Thêm khoảng cách giữa các nút */
+}
+
+button:nth-child(1) {
+    background: #e94d58;
+}
+
+button:nth-child(2) {
+    background: white;
+    color: #e94d58;
+    transition: left 0.3s ease, top 0.3s ease;
+}
