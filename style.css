@@ -9,57 +9,69 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #add8e6; /* Màu nền cho toàn bộ trang web */
-    padding: 10px; /* Thêm khoảng cách để nội dung không sát lề trên điện thoại */
+    background: #add8e6;
+    padding: 10px;
 }
 
 .wrapper {
-    text-align: center; /* Căn giữa nội dung */
-    max-width: 500px; /* Giới hạn độ rộng của nội dung để phù hợp với màn hình nhỏ */
-    width: 100%; /* Đảm bảo khung chứa chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #e94d58;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     color: #e94d58;
     margin: 15px 0;
-    font-size: 2.5em; /* Giảm kích thước chữ trên màn hình nhỏ */
 }
 
 .gif {
     display: block;
-    margin: 20px auto; /* Căn giữa hình ảnh theo chiều ngang */
-    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước màn hình */
+    margin: 20px auto;
+    max-width: 100%;
     height: auto;
-    border-radius: 10px; /* Thêm góc bo cho hình ảnh */
+    border-radius: 10px;
 }
 
 .btn-group {
     display: flex;
-    flex-direction: column; /* Đặt các nút theo cột để dễ bấm trên điện thoại */
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
+    gap: 30px; /* Khoảng cách giữa các nút */
+    position: relative;
+    width: 100%;
+    height: 50px;
 }
 
 button {
-    width: 80%; /* Giảm kích thước nút để phù hợp với màn hình nhỏ */
-    height: 50px;
+    width: 80px; /* Đặt chiều rộng cụ thể cho nút */
+    height: 40px;
     color: white;
-    font-size: 1.2em;
-    border-radius: 30px;
+    font-size: 1em;
+    border-radius: 20px;
     outline: none;
     cursor: pointer;
     box-shadow: 0 2px 4px gray;
     border: 2px solid #e94d58;
-    margin: 10px 0; /* Thêm khoảng cách giữa các nút */
+    position: relative;
 }
 
-button:nth-child(1) {
+.yes-btn {
     background: #e94d58;
 }
 
-button:nth-child(2) {
+.no-btn {
     background: white;
     color: #e94d58;
+    /* Remove position: relative; */
     transition: left 0.3s ease, top 0.3s ease;
+    /* Adjust left and top properties as needed */
 }
+
